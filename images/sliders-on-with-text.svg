@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="174px" height="22px" viewBox="0 0 174 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>compare-on</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="compare-on">
+            <rect id="Rectangle-3" stroke="#FFFFFF" stroke-width="2" fill-rule="nonzero" x="71" y="1" width="34" height="20"></rect>
+            <path d="M88,2.39130435 L88,19.6086957" id="Line" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" fill-rule="nonzero"></path>
+            <circle id="Oval" stroke="#FFFFFF" fill="#FFFFFF" fill-rule="nonzero" cx="88" cy="11" r="3"></circle>
+            <polygon id="Triangle" fill="#FFFFFF" fill-rule="nonzero" opacity="0.5" points="75 11 81 8 81 14"></polygon>
+            <polygon id="Triangle-Copy" fill="#FFFFFF" fill-rule="nonzero" opacity="0.5" transform="translate(98.000000, 11.000000) scale(-1, 1) translate(-98.000000, -11.000000) " points="95 11 101 8 101 14"></polygon>
+            <text id="Sliders" font-family="MuseoSans-700, Museo Sans" font-size="14" font-weight="500" letter-spacing="0.4375" fill="#FFFFFF">
+                <tspan x="117" y="16">SLIDERS</tspan>
+            </text>
+            <text id="View-as-Copy" font-family="MuseoSans-700, Museo Sans" font-size="14" font-weight="500" letter-spacing="0.4375" fill="#FFFFFF">
+                <tspan x="0" y="16">VIEW AS</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,180 @@
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Williamsburg Flashback</title>
+	<meta property="og:title" content="Williamsburg Flashback" />
+	<meta property="og:description" content="A decade of hyper-development in North Brooklyn." />
+	<meta name="description" content="A decade of hyper-development in North Brooklyn.">
+	<meta content="Daniel S Dunnam" name="author">
+	<meta property="og:image" content="http://www.danielsdunnam.com/wbflashback/images/social-preview.jpg" />
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+	<link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+	<link href="css/styles.css" rel="stylesheet">
+
+	<style type="text/css">
+	</style>
+	<!-- lazy load scripts -->
+	<script src="js/ls.bgset.min.js"></script>
+	<script src="js/lazysizes.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	<script src="js/jquery.event.move.js"></script>
+	<script src="js/jquery.twentytwenty.js"></script>
+
+
+	<script>
+		$(function () {
+			$(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({ default_offset_pct: 0.7 });
+			$(".twentytwenty-container[data-orientation='vertical']").twentytwenty({ default_offset_pct: 0.3, orientation: 'vertical' });
+		});
+
+
+		function HideCrossfades(obj) {
+			for (var i = 0; i < obj.length; i++) {
+				document.getElementById([obj[i]]).style.display = 'none';
+			}
+		}
+
+		function ShowCrossfades(obj) {
+			for (var i = 0; i < obj.length; i++) {
+				document.getElementById([obj[i]]).style.display = 'block';
+			}
+		}
+
+
+		var q = 0;
+		function swapCrossfades() {
+			if (q == 0) {
+				document.getElementById("crossfades").setAttribute('src', 'images/crossfades-on.svg');
+				document.getElementById("sliders").setAttribute('src', 'images/sliders-off.svg');
+				q++;
+			}
+			else {
+				document.getElementById("crossfades").setAttribute('src', 'images/crossfades-off.svg');
+				document.getElementById("sliders").setAttribute('src', 'images/sliders-on.svg');
+				q--;
+			}
+		}
+
+		var q = 0;
+		function swapSliders() {
+			if (q == 0) {
+				document.getElementById("crossfades").setAttribute('src', 'images/crossfades-off.svg');
+				document.getElementById("sliders").setAttribute('src', 'images/sliders-on.svg');
+				q++;
+			}
+			else {
+				document.getElementById("crossfades").setAttribute('src', 'images/crossfades-on.svg');
+				document.getElementById("sliders").setAttribute('src', 'images/sliders-off.svg');
+				q--;
+			}
+		}
+
+	</script>
+
+
+</head>
+
+<body>
+
+
+	<div class="top-nav-wrp">
+
+		<nav class="top-nav">
+			<ul class="nav">
+				<li>
+					<a href="" class="daniel">
+						<img width="12" height="12" src="images/back-arrow.svg">danielsdunnam.com</a>
+				</li>
+				<li class="toggles">
+					<a href="#" class="cross-fade-nav" onclick="swapCrossfades();ShowCrossfades(['crossfades1','crossfades2'])">View As
+						<img id="crossfades" src="images/crossfades-on.svg" onclick="swapCrossfades();ShowCrossfades(['crossfades1','crossfades2'])"
+						 height="22" width="46" border="0" />Crossfades</a>
+				</li>
+				<li class="toggles">
+					<a href="#" class="slider-nav" onclick="swapSliders();HideCrossfades(['crossfades1','crossfades2'])">View As
+						<img id="sliders" src="images/sliders-off.svg" height="22" width="46" onclick="swapSliders();HideCrossfades(['crossfades1','crossfades2'])"
+						 border="0" />Sliders</a>
+				</li>
+			</ul>
+
+			<ul class="social">
+				<li style="opacity: .6;">Find me elsewhere</li>
+				<li>
+					<a href="#" name="instagram">
+						<img width="22" height="22" src="images/instagram.svg">
+					</a>
+				</li>
+				<li>
+					<a href="#" name="facebook">
+						<img width="22" height="22" src="images/facebook.svg">
+					</a>
+				</li>
+				<li>
+					<a href="#" name="twitter">
+						<img width="22" height="22" src="images/twitter.svg">
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="full" id="main-content">
+
+
+		<a href="#"></a>
+		<a href="#"></a>
+
+
+
+
+		<section id="intro">
+			<header class="container header section-title">
+				<h1>
+					<img src="images/WBFlashback.svg">
+				</h1>
+				<h2>A Decade of Hyper-development in North Brooklyn</h2>
+			</header>
+
+			<div class="full">
+
+				<div class="container">
+
+					<div class="before-after">
+						<div class="crossfade" id="crossfades1">
+							<img class="bottom" src="images/desk-view-b.jpg" />
+							<img class="top" src="images/desk-view-a.jpg" />
+						</div>
+						<div class="twentytwenty-container">
+							<img src="images/desk-view-b.jpg" />
+							<img src="images/desk-view-a.jpg" />
+						</div>
+						<h1>Desk View</h1>
+						<p>The view from my desk in 2007 vs today. This one is the most dramatic. It's almost hard to find the throughline here.
+							But I assure you this is lined up pretty well. It’s just that almost every visible thing has changed, including the
+							lamp post.</p>
+					</div>
+
+
+					<div class="before-after">
+						<div class="crossfade" id="crossfades2">
+							<img class="bottom" src="images/academy-records-b.jpg" />
+							<img class="top" src="images/academy-records-a.jpg" />
+						</div>
+						<div class="twentytwenty-container">
+							<img src="images/academy-records-b.jpg" />
+							<img src="images/academy-records-a.jpg" />
+						</div>
+						<h1>Academy Records</h1>
+						<p>At least Academy Records and Flying Squirrel are still going strong up in Greenpoint.</p>
+					</div>
+
+				</div>
+			</div>
+
+			<script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,692 @@
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/252efa");
+
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+
+body {
+  background: #f2f2f2;
+}
+
+* {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font: 16px/22px MuseoSans-300, sans-serif;
+  color: #3d3941;
+}
+
+#main-content {
+  top: 37px;
+}
+
+.full {
+  position: relative;
+  width: 100%;
+  margin: 0px;
+}
+
+.top-nav-wrp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 110;
+  height: 37px;
+  background: #3d3941;
+}
+
+.top-nav {
+  margin: 0 auto;
+  width: 98%;
+  height: 37px;
+  font: 14px/37px MuseoSans-300, sans-serif;
+  color: #fff;
+  letter-spacing: 0.05em;
+}
+
+/* .top-nav .contact-link {
+  display: none;
+  text-align: center;
+} */
+
+.top-nav a {
+  font: 14px/37px MuseoSans-500, sans-serif;
+  color: #fff;
+  letter-spacing: 0.1em;
+  /*			text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);*/
+  opacity: 0.6;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.top-nav a:hover {
+  color: #fff;
+  text-decoration: none;
+  opacity: 1;
+}
+
+.top-nav ul {
+  margin: 0;
+  padding: 0;
+  height: 37px;
+}
+
+.top-nav ul.nav {
+  float: left;
+}
+
+.top-nav ul.social {
+  float: right;
+}
+
+.top-nav ul.contact-info {
+  float: right;
+}
+
+.top-nav ul li {
+  display: inline-block;
+  margin: 0;
+}
+
+.top-nav li strong {
+  font: 10px/36px MuseoSans-500, sans-serif;
+  opacity: 0.6;
+}
+
+.top-nav .nav li {
+  padding-right: 20px;
+  vertical-align: middle;
+}
+
+.top-nav .social li {
+  padding: 0 5px 0 0;
+  vertical-align: middle;
+}
+
+.top-nav li a img {
+  padding: 0 5px 0 0;
+}
+
+.top-nav .contact-info li {
+  padding-left: 20px;
+}
+
+.top-nav .toggles {
+  text-transform: uppercase;
+  font: 14px/36px MuseoSans-700, sans-serif;
+  vertical-align: middle;
+  letter-spacing: 0;
+}
+
+.top-nav .toggles img {
+  vertical-align: middle;
+}
+
+/* end top nav */
+
+.header h1 {
+  font: 70px/45px MuseoSans-900, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #444444;
+  margin-top: 60px;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 16px;
+}
+
+.header h2 {
+  font: 16px/19px MuseoSans-500, sans-serif;
+  color: #3d3941;
+  text-transform: lowercase;
+  letter-spacing: 0.08em;
+}
+
+.header h2 span img {
+  margin: 0.38em 0 0 -0.03em;
+  position: absolute;
+  width: 67px;
+  height: 13px;
+  z-index: 80;
+}
+
+.header .intro {
+  margin: 30px 0 0 92px;
+  height: 166px;
+  clear: both;
+}
+
+.header p {
+  font: 15px/18px MuseoSans-300, sans-serif;
+  color: #444;
+  text-align: left;
+  width: 480px;
+  margin: 20px 58px 0 0;
+  float: left;
+  word-break: hyphenate;
+}
+
+.header p strong {
+  font: 15px/18px MuseoSans-700, sans-serif;
+  color: #444;
+}
+
+p strong {
+  font: 15px/19px MuseoSans-700, sans-serif;
+  color: #444;
+}
+
+.dropcap {
+  font: 34px/30px MuseoSans-900, sans-serif;
+  letter-spacing: 0.06em;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #00897d;
+  float: left;
+  padding-top: 2px;
+  padding-right: 6px;
+  padding-left: 0;
+}
+
+.content {
+  padding: 0;
+  margin: 0;
+}
+
+.footer {
+  padding: 0;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.section-title img {
+  width: 95%;
+  max-width: 1010px;
+}
+
+.videodiv {
+  width: 100%;
+  max-width: 1010px;
+  position: absolute;
+  z-index: 90;
+}
+
+.before-after {
+  background: #ffffff;
+  width: 100%;
+  max-width: 1010px;
+  margin: 50px auto;
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.before-after h1 {
+  font: 20px/30px MuseoSans-900, sans-serif;
+  letter-spacing: 0.1em;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #3d3941;
+  width: 80%;
+  text-align: left;
+  margin: 20px auto 5px;
+}
+
+.before-after p {
+  font: 16px/22px MuseoSans-300, sans-serif;
+  letter-spacing: 0.03em;
+  font-weight: normal;
+  color: #3d3941;
+  width: 80%;
+  text-align: left;
+  margin: 0px auto;
+  padding-bottom: 30px;
+}
+
+.before-after .crossfade {
+  position: relative;
+  z-index: 100;
+}
+
+.before-after .crossfade img {
+  position: absolute;
+  width: 100%;
+}
+
+.before-after .crossfade .top {
+  animation-name: fade;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 2.5s;
+  animation-direction: alternate;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.thumb {
+  margin: 40px 0 30px;
+  display: block;
+  text-decoration: none;
+  border-radius: 6px;
+
+  /*	-webkit-box-shadow:  0px 1px 6px #b3b3b3;
+	box-shadow:  0px 1px 6px #b3b3b3;*/
+}
+
+.caption {
+  background: #999999;
+  text-transform: uppercase;
+  font: 13px/30px MuseoSans-700, sans-serif;
+  color: #e5e5e5;
+  letter-spacing: 0.1em;
+  /*	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);*/
+  text-decoration: none;
+  padding: 2px 5px 0 5px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 0px 0px 6px 6px;
+  margin: 0;
+}
+
+a:hover .caption {
+  opacity: 1;
+}
+
+.divider {
+  width: 100%;
+  height: 5px;
+  margin: 20px 0 0 0;
+  border-bottom: 1px solid #ccc;
+}
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  z-index: 40;
+}
+
+/* #Page Styles
+================================================== */
+
+/* #Media Queries
+================================================== */
+@media only screen and (min-width: 1200px) {
+  #anchors .phone:hover,
+  #anchors .phone {
+    padding-left: 235px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+  .top-nav {
+    width: 100%;
+  }
+
+  .top-nav .nav {
+    width: 100%;
+  }
+
+  .top-nav .nav li {
+    padding: 0 10px;
+  }
+
+  .top-nav .contact-info {
+    width: 50%;
+    text-align: right;
+  }
+  .top-nav .contact-info li {
+    padding: 0 10px;
+  }
+}
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+  video {
+    width: 100%;
+  }
+
+  #main-content
+    div#workhistory.full
+    div.container.sixteen.columns#workhistoryList
+    div.container
+    div.container.ten.columns {
+    float: left;
+    width: 95%;
+  }
+
+  #main-content
+    div#workhistory.full
+    div.container.sixteen.columns#workhistoryList
+    div.container
+    div.container.three.columns
+    h4.date {
+    line-height: 19px;
+    margin: 30px 0 0 0;
+  }
+
+  #nav-contact {
+    display: block;
+  }
+
+  .top-nav {
+    width: 100%;
+  }
+
+  .top-nav .nav {
+    width: 50%;
+  }
+
+  .top-nav .nav li {
+    padding: 0 10px;
+  }
+
+  .top-nav .contact-info {
+    width: 50%;
+    text-align: right;
+  }
+  .top-nav .contact-info li {
+    padding: 0 10px;
+  }
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .container.three.columns.dateWrp {
+    width: 100%;
+  }
+
+  /* .top-nav .contact-info {
+    display: none;
+  }
+  .top-nav .nav {
+    display: none;
+  } */
+
+  .top-nav .contact-link {
+    display: block;
+  }
+
+  .iphoneContact {
+    display: block;
+  }
+
+  .divider {
+    clear: both;
+    width: 100%;
+    height: 5px;
+    margin: 5px 0 0 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  .header h1 {
+    font-size: 65px;
+    line-height: 65px;
+  }
+
+  #main-content div.container.header.section-title h1 {
+    line-height: 60px;
+  }
+
+  /* .top-nav .contact-info {
+    display: none;
+  }
+  .top-nav .nav {
+    display: none;
+  } */
+
+  .top-nav .contact-link {
+    display: block;
+  }
+
+  .divider {
+    clear: both;
+    width: 100%;
+    height: 5px;
+    margin: 5px 0 0 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  #anchors .phone:hover,
+  #anchors .phone {
+    padding-left: 0px;
+  }
+  .iphoneContact {
+    display: block;
+  }
+
+  .divider {
+    clear: both;
+    width: 100%;
+    height: 5px;
+    margin: 5px 0 0 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  body {
+    /* background: red; */
+  }
+
+  .header h1 {
+    font-size: 55px;
+    line-height: 54px;
+  }
+
+  .casestudies h1 {
+    font-size: 34px;
+  }
+
+  #workhistory h1 {
+    font-size: 34px;
+  }
+
+  #anchors .phone:hover,
+  #anchors .phone {
+    padding-left: 0px;
+  }
+  .iphoneContact {
+    display: block;
+  }
+
+  #workhistory h2 {
+    line-height: 28px;
+  }
+  span .date {
+    line-height: 28px;
+  }
+
+  .divider {
+    clear: both;
+    width: 100%;
+    height: 5px;
+    margin: 5px 0 0 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+/* #Font-Face
+================================================== */
+/* @license
+ * MyFonts Webfont Build ID 2436858, 2012-12-23T19:21:45-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Museo Sans 700 by exljbris
+ * URL: http://www.myfonts.com/fonts/exljbris/museo-sans/700/
+ * 
+ * Webfont: Museo Sans 300 by exljbris
+ * URL: http://www.myfonts.com/fonts/exljbris/museo-sans/300/
+ * 
+ * Webfont: Museo Sans 500 by exljbris
+ * URL: http://www.myfonts.com/fonts/exljbris/museo-sans/500/
+ * 
+ * Webfont: Museo Sans 100 by exljbris
+ * URL: http://www.myfonts.com/fonts/exljbris/museo-sans/100/
+ * 
+ * Webfont: Museo Sans 300 Italic by exljbris
+ * URL: http://www.myfonts.com/fonts/exljbris/museo-sans/300-italic/
+ * 
+ * Webfont: Museo Sans 900 by exljbris
+ * URL: http://www.myfonts.com/fonts/exljbris/museo-sans/900/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2436858
+ * Webfonts copyright: Copyright (c) 2008 by Jos Buivenga. All rights reserved.
+ * 
+ * © 2012 Bitstream Inc
+*/
+
+@font-face {
+  font-family: "MuseoSans-700";
+  src: url("../fonts/252EFA_0_0.eot");
+  src: url("../fonts/252EFA_0_0.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/252EFA_0_0.woff") format("woff"),
+    url("../fonts/252EFA_0_0.ttf") format("truetype"),
+    url("../fonts/252EFA_0_0.svg#wf") format("svg");
+}
+
+@font-face {
+  font-family: "MuseoSans-300";
+  src: url("../fonts/252EFA_1_0.eot");
+  src: url("../fonts/252EFA_1_0.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/252EFA_1_0.woff") format("woff"),
+    url("../fonts/252EFA_1_0.ttf") format("truetype"),
+    url("../fonts/252EFA_1_0.svg#wf") format("svg");
+}
+
+@font-face {
+  font-family: "MuseoSans-500";
+  src: url("../fonts/252EFA_2_0.eot");
+  src: url("../fonts/252EFA_2_0.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/252EFA_2_0.woff") format("woff"),
+    url("../fonts/252EFA_2_0.ttf") format("truetype"),
+    url("../fonts/252EFA_2_0.svg#wf") format("svg");
+}
+
+@font-face {
+  font-family: "MuseoSans-100";
+  src: url("../fonts/252EFA_3_0.eot");
+  src: url("../fonts/252EFA_3_0.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/252EFA_3_0.woff") format("woff"),
+    url("../fonts/252EFA_3_0.ttf") format("truetype"),
+    url("../fonts/252EFA_3_0.svg#wf") format("svg");
+}
+
+@font-face {
+  font-family: "MuseoSans-300Italic";
+  src: url("../fonts/252EFA_4_0.eot");
+  src: url("../fonts/252EFA_4_0.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/252EFA_4_0.woff") format("woff"),
+    url("../fonts/252EFA_4_0.ttf") format("truetype"),
+    url("../fonts/252EFA_4_0.svg#wf") format("svg");
+}
+
+@font-face {
+  font-family: "MuseoSans-900";
+  src: url("../fonts/252EFA_5_0.eot");
+  src: url("../fonts/252EFA_5_0.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/252EFA_5_0.woff") format("woff"),
+    url("../fonts/252EFA_5_0.ttf") format("truetype"),
+    url("../fonts/252EFA_5_0.svg#wf") format("svg");
+}
+
+/* Helpers */
+
+.center {
+  margin: 15px auto 0;
+  display: block;
+  width: 100%;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1200px) {
+  .hidden-lg {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+  .hidden-md {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 959px) {
+  .hidden-sm {
+    display: none;
+  }
+}
+
+.nav {
+  margin: 0 auto;
+}
+
+/* .social {
+  display: none;
+} */
