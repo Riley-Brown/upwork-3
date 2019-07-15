@@ -1,0 +1,302 @@
+@import url("//hello.myfonts.net/count/252efa");
+
+@font-face {
+  font-family: MuseoSans;
+  src: url("fonts/MuseoSans_500.otf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f2f2f2;
+  /* background-color: red; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  background-color: #3d3941;
+  height: 37px;
+  color: #fff;
+  font: 14px/37px MuseoSans-500, sans-serif;
+}
+.navbar a,
+.navbar-text,
+.cross-fade-nav,
+.sliders-nav {
+  color: #fff;
+  opacity: 0.6;
+  text-decoration: none;
+  cursor: pointer;
+}
+.cross-fade-nav {
+  opacity: 1;
+}
+
+.navbar a:hover,
+.navbar-text:hover,
+.cross-fade-nav:hover,
+.sliders-nav:hover {
+  color: #fff;
+  opacity: 1 !important;
+}
+
+.social {
+  opacity: 0.6;
+}
+.social:hover {
+  opacity: 1;
+}
+.navbar i {
+  font-size: 1.7rem;
+  padding: 5px;
+}
+
+.image-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 10px;
+  max-width: 1000px;
+}
+.site-top h2 {
+  font: 16px/19px MuseoSans-500, sans-serif;
+  color: #3d3941;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.site-top {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 50px;
+  max-width: 1000px;
+}
+
+.social {
+  display: inline-block;
+}
+
+.cross-fade {
+  position: relative;
+
+  margin: 0 auto;
+}
+
+/* .cross-fade img {
+  position: absolute;
+  left: 0;
+  -webkit-transition: opacity 1s ease-out;
+  -moz-transition: opacity 1s ease-out;
+  -o-transition: opacity 1s ease-out;
+  transition: opacity 1s ease-out;
+}
+.cross-fade:first-of-type {
+  position: relative;
+}
+
+@keyframes cf3FadeInOut {
+  0% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.cross-fade img.top {
+  animation-name: cf3FadeInOut;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-direction: alternate;
+} */
+
+.description {
+  background-color: #fff;
+  z-index: 1;
+
+  margin: 0 auto;
+  margin-bottom: 70px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.description-content {
+  width: 80%;
+  margin: 0 auto;
+}
+.description-content h1 {
+  font-size: 1.2rem;
+  padding-top: 15px;
+  font: 20px/30px MuseoSans-900, sans-serif;
+  color: #3d3941;
+}
+.description-content p {
+  padding-bottom: 25px;
+  font: 16px/22px MuseoSans-300, sans-serif;
+  color: #3d3941;
+}
+
+.item {
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  position: absolute;
+}
+
+.twentytwenty-wrapper {
+  margin: 0 auto;
+}
+
+.cross-fade-sliders-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1010px;
+  position: relative;
+}
+.twentytwenty-container {
+  width: 100% !important;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: block !important;
+}
+.twentytwenty-container img {
+  width: 100% !important;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.carousel {
+  margin: 0 auto;
+  display: block;
+
+  z-index: 10;
+}
+
+/* media queries */
+
+@media (max-width: 960px) {
+  .navbar a:first-child {
+    display: none;
+  }
+  .cross-fade-sliders-wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .social,
+  .navbar i {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .cross-fade-sliders-wrapper {
+    width: 95%;
+  }
+}
+
+@media (max-width: 600px) {
+  .cross-fade-sliders-wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .cross-fade-nav span:first-of-type,
+  .sliders-nav span:first-of-type {
+    display: none;
+  }
+}
+
+@media (max-width: 350px) {
+  ul.navbar-nav {
+    font-size: 12px;
+  }
+}
+
+/* import fonts */
+
+@font-face {
+  font-family: "MuseoSans-700";
+  src: url("../fonts/252EFA_0_0.eot");
+  src: url("../fonts/252EFA_0_0.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/252EFA_0_0.woff") format("woff"),
+    url("../fonts/252EFA_0_0.ttf") format("truetype"),
+    url("../fonts/252EFA_0_0.svg#wf") format("svg");
+}
+
+@font-face {
+  font-family: "MuseoSans-300";
+  src: url("../fonts/252EFA_1_0.eot");
+  src: url("../fonts/252EFA_1_0.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/252EFA_1_0.woff") format("woff"),
+    url("../fonts/252EFA_1_0.ttf") format("truetype"),
+    url("../fonts/252EFA_1_0.svg#wf") format("svg");
+}
+
+@font-face {
+  font-family: "MuseoSans-500";
+  src: url("../fonts/252EFA_2_0.eot");
+  src: url("../fonts/252EFA_2_0.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/252EFA_2_0.woff") format("woff"),
+    url("../fonts/252EFA_2_0.ttf") format("truetype"),
+    url("../fonts/252EFA_2_0.svg#wf") format("svg");
+}
+
+@font-face {
+  font-family: "MuseoSans-100";
+  src: url("../fonts/252EFA_3_0.eot");
+  src: url("../fonts/252EFA_3_0.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/252EFA_3_0.woff") format("woff"),
+    url("../fonts/252EFA_3_0.ttf") format("truetype"),
+    url("../fonts/252EFA_3_0.svg#wf") format("svg");
+}
+
+@font-face {
+  font-family: "MuseoSans-300Italic";
+  src: url("../fonts/252EFA_4_0.eot");
+  src: url("../fonts/252EFA_4_0.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/252EFA_4_0.woff") format("woff"),
+    url("../fonts/252EFA_4_0.ttf") format("truetype"),
+    url("../fonts/252EFA_4_0.svg#wf") format("svg");
+}
+
+@font-face {
+  font-family: "MuseoSans-900";
+  src: url("../fonts/252EFA_5_0.eot");
+  src: url("../fonts/252EFA_5_0.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/252EFA_5_0.woff") format("woff"),
+    url("../fonts/252EFA_5_0.ttf") format("truetype"),
+    url("../fonts/252EFA_5_0.svg#wf") format("svg");
+}
+
+#cover {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #3d3941;
+}
+
+#cover img {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

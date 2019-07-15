@@ -1,180 +1,270 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>test</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
 
-	<meta charset="utf-8">
-	<title>Williamsburg Flashback</title>
-	<meta property="og:title" content="Williamsburg Flashback" />
-	<meta property="og:description" content="A decade of hyper-development in North Brooklyn." />
-	<meta name="description" content="A decade of hyper-development in North Brooklyn.">
-	<meta content="Daniel S Dunnam" name="author">
-	<meta property="og:image" content="http://www.danielsdunnam.com/wbflashback/images/social-preview.jpg" />
-	<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
-	<link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
-	<link href="css/styles.css" rel="stylesheet">
-
-	<style type="text/css">
-	</style>
-	<!-- lazy load scripts -->
-	<script src="js/ls.bgset.min.js"></script>
-	<script src="js/lazysizes.min.js"></script>
-
-	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-	<script src="js/jquery.event.move.js"></script>
-	<script src="js/jquery.twentytwenty.js"></script>
-
-
-	<script>
-		$(function () {
-			$(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({ default_offset_pct: 0.7 });
-			$(".twentytwenty-container[data-orientation='vertical']").twentytwenty({ default_offset_pct: 0.3, orientation: 'vertical' });
-		});
-
-
-		function HideCrossfades(obj) {
-			for (var i = 0; i < obj.length; i++) {
-				document.getElementById([obj[i]]).style.display = 'none';
-			}
-		}
-
-		function ShowCrossfades(obj) {
-			for (var i = 0; i < obj.length; i++) {
-				document.getElementById([obj[i]]).style.display = 'block';
-			}
-		}
-
-
-		var q = 0;
-		function swapCrossfades() {
-			if (q == 0) {
-				document.getElementById("crossfades").setAttribute('src', 'images/crossfades-on.svg');
-				document.getElementById("sliders").setAttribute('src', 'images/sliders-off.svg');
-				q++;
-			}
-			else {
-				document.getElementById("crossfades").setAttribute('src', 'images/crossfades-off.svg');
-				document.getElementById("sliders").setAttribute('src', 'images/sliders-on.svg');
-				q--;
-			}
-		}
-
-		var q = 0;
-		function swapSliders() {
-			if (q == 0) {
-				document.getElementById("crossfades").setAttribute('src', 'images/crossfades-off.svg');
-				document.getElementById("sliders").setAttribute('src', 'images/sliders-on.svg');
-				q++;
-			}
-			else {
-				document.getElementById("crossfades").setAttribute('src', 'images/crossfades-on.svg');
-				document.getElementById("sliders").setAttribute('src', 'images/sliders-off.svg');
-				q--;
-			}
-		}
-
-	</script>
-
-
+  <link rel="stylesheet" href="css/twentytwenty.css">
+  <link rel="stylesheet" href="css/cross-fade.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
+
+
+
 
 <body>
 
+  <!-- display spinner until site load -->
+  <div id="cover">
+    <img src="spinner.svg" alt="spinning logo">
+  </div>
 
-	<div class="top-nav-wrp">
+  <!-- navbar -->
+  <nav class="navbar sticky-top navbar-expand">
+    <a class="nav-item" href="#">
+      <span>
+        <img src="svg/back-arrow.svg" alt="back arrow icon">
+      </span>danielsdunnam.com
+    </a>
 
-		<nav class="top-nav">
-			<ul class="nav">
-				<li>
-					<a href="" class="daniel">
-						<img width="12" height="12" src="images/back-arrow.svg">danielsdunnam.com</a>
-				</li>
-				<li class="toggles">
-					<a href="#" class="cross-fade-nav" onclick="swapCrossfades();ShowCrossfades(['crossfades1','crossfades2'])">View As
-						<img id="crossfades" src="images/crossfades-on.svg" onclick="swapCrossfades();ShowCrossfades(['crossfades1','crossfades2'])"
-						 height="22" width="46" border="0" />Crossfades</a>
-				</li>
-				<li class="toggles">
-					<a href="#" class="slider-nav" onclick="swapSliders();HideCrossfades(['crossfades1','crossfades2'])">View As
-						<img id="sliders" src="images/sliders-off.svg" height="22" width="46" onclick="swapSliders();HideCrossfades(['crossfades1','crossfades2'])"
-						 border="0" />Sliders</a>
-				</li>
-			</ul>
-
-			<ul class="social">
-				<li style="opacity: .6;">Find me elsewhere</li>
-				<li>
-					<a href="#" name="instagram">
-						<img width="22" height="22" src="images/instagram.svg">
-					</a>
-				</li>
-				<li>
-					<a href="#" name="facebook">
-						<img width="22" height="22" src="images/facebook.svg">
-					</a>
-				</li>
-				<li>
-					<a href="#" name="twitter">
-						<img width="22" height="22" src="images/twitter.svg">
-					</a>
-				</li>
-			</ul>
-		</nav>
-	</div>
-
-	<div class="full" id="main-content">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item active">
+          <div class="nav-link ml-4 cross-fade-nav">
+            <span>VIEW AS</span>
+            <span>
+              <img src="svg/crossfades-on.svg" class="cross-fade-nav-img" alt="icon"> CROSSFADES
+            </span>
 
 
-		<a href="#"></a>
-		<a href="#"></a>
+          </div>
+
+          <li class="nav-item active">
+            <div class="nav-link sliders-nav">
+              <span>VIEW AS</span>
+              <span>
+                <img src="svg/sliders-off.svg" class="sliders-nav-img" alt="icon"> SLIDERS
+              </span>
+
+            </div>
+
+          </li>
+
+      </ul>
+      <span class="nav-item social">
+        Find me elsewhere
+      </span>
+      <a href="#">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-facebook-square"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-twitter-square"></i>
+      </a>
+
+
+    </div>
+  </nav>
+
+  <!-- top site logo and slogan -->
+  <div class="site-top">
+    <img src="svg/WBFlashback.svg" alt="logo">
+    <h2 class="text-center">a decade of hyper-development in north brooklyn</h2>
+  </div>
+
+
+
+  <!-- crossfade slider wrapper -->
+  <div class="cross-fade-sliders-wrapper">
+    <!-- slider effect start -->
+    <div class="twentytwenty-container">
+      <img src="images/desk-view-b.jpg" alt="desk view before">
+      <img src="images/desk-view-a.jpg" alt="desk view after">
+    </div>
+    <!-- slider effect end -->
+
+    <!-- crossfade effect start -->
+    <div class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="images/desk-view-b.jpg" alt="desk before">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/desk-view-a.jpg" alt="desk after">
+        </div>
+
+      </div>
+
+    </div>
+    <!-- crossfade end -->
+
+    <!-- description start -->
+    <div class="description">
+      <div class="description-content">
+        <h1>DESK VIEW</h1>
+        <p>The view from my desk in 2007 vs today. This one is the most dramatic. It's almost hard to find the throughline here.
+          But I assure you this is lined up pretty well. It’s just that almost every visible thing has changed, including
+          the lamp post.
+        </p>
+      </div>
+    </div>
+    <!-- description end -->
+
+  </div>
+  <!-- crossfade slider wrapper end -->
+
+
+  <!-- crossfade slider wrapper -->
+  <div class="cross-fade-sliders-wrapper">
+    <!-- slider effect start -->
+    <div class="twentytwenty-container">
+      <img src="images/academy-records-b.jpg" class="not-lazy" alt="">
+      <img src="spinner.svg" data-src="images/academy-records-a.jpg" class="lazy" alt="">
+    </div>
+    <!-- slider effect end -->
+
+
+    <!-- cross fade effect start -->
+    <div class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100 lazy" src="spinner.svg" data-src="images/academy-records-b.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 lazy" src="spinner.svg" data-src="images/academy-records-a.jpg" alt="Second slide">
+        </div>
+
+      </div>
+
+    </div>
+    <!-- crossfade end -->
+
+    <!-- description start -->
+    <div class="description">
+      <div class="description-content">
+        <h1>ACADEMY RECORDS</h1>
+        <p>At least Academy Records and Flying Squirrel are still going strong up in Greenpoint.
+        </p>
+      </div>
+    </div>
+    <!-- description end -->
+
+  </div>
+  <!-- crossfade slider wrapper end -->
 
 
 
 
-		<section id="intro">
-			<header class="container header section-title">
-				<h1>
-					<img src="images/WBFlashback.svg">
-				</h1>
-				<h2>A Decade of Hyper-development in North Brooklyn</h2>
-			</header>
+  <!-- crossfade slider wrapper -->
+  <div class="cross-fade-sliders-wrapper">
+    <!-- slider effect start -->
+    <div class="twentytwenty-container">
+      <img src="images/Kent-Ave-b.jpg" class="not-lazy" alt="">
+      <img src="spinner.svg" data-src="images/Kent-Ave-a.jpg" class="lazy" alt="">
+    </div>
+    <!-- slider effect end -->
 
-			<div class="full">
+    <!-- crossfade effect start -->
+    <div class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100 lazy" src="spinner.svg" data-src="images/Kent-Ave-b.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 lazy" src="spinner.svg" data-src="images/Kent-Ave-a.jpg" alt="Second slide">
+        </div>
+      </div>
+    </div>
+    <!-- crossfade end -->
 
-				<div class="container">
+    <!-- description start -->
+    <div class="description">
+      <div class="description-content">
+        <h1>ACADEMY RECORDS</h1>
+        <p>At least Academy Records and Flying Squirrel are still going strong up in Greenpoint.
+        </p>
+      </div>
+    </div>
+    <!-- description end -->
 
-					<div class="before-after">
-						<div class="crossfade" id="crossfades1">
-							<img class="bottom" src="images/desk-view-b.jpg" />
-							<img class="top" src="images/desk-view-a.jpg" />
-						</div>
-						<div class="twentytwenty-container">
-							<img src="images/desk-view-b.jpg" />
-							<img src="images/desk-view-a.jpg" />
-						</div>
-						<h1>Desk View</h1>
-						<p>The view from my desk in 2007 vs today. This one is the most dramatic. It's almost hard to find the throughline here.
-							But I assure you this is lined up pretty well. It’s just that almost every visible thing has changed, including the
-							lamp post.</p>
-					</div>
+  </div>
+  <!-- crossfade slider wrapper end -->
 
 
-					<div class="before-after">
-						<div class="crossfade" id="crossfades2">
-							<img class="bottom" src="images/academy-records-b.jpg" />
-							<img class="top" src="images/academy-records-a.jpg" />
-						</div>
-						<div class="twentytwenty-container">
-							<img src="images/academy-records-b.jpg" />
-							<img src="images/academy-records-a.jpg" />
-						</div>
-						<h1>Academy Records</h1>
-						<p>At least Academy Records and Flying Squirrel are still going strong up in Greenpoint.</p>
-					</div>
+  <!-- crossfade slider wrapper -->
+  <div class="cross-fade-sliders-wrapper">
+    <!-- slider effect start -->
+    <div class="twentytwenty-container">
+      <img src="images/tops-b.jpg" class="not-lazy" alt="">
+      <img src="spinner.svg" data-src="images/tops-a.jpg" class="lazy" alt="">
+    </div>
+    <!-- slider effect end -->
 
-				</div>
-			</div>
+    <!-- crossfade effect start -->
+    <div class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100 lazy" src="spinner.svg" data-src="images/tops-b.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 lazy" src="spinner.svg" data-src="images/tops-a.jpg" alt="Second slide">
+        </div>
 
-			<script src="js/main.js"></script>
+      </div>
+
+    </div>
+    <!-- crossfade end -->
+
+    <!-- description start -->
+    <div class="description">
+      <div class="description-content">
+        <h1>ACADEMY RECORDS</h1>
+        <p>At least Academy Records and Flying Squirrel are still going strong up in Greenpoint.
+        </p>
+      </div>
+    </div>
+    <!-- description end -->
+
+  </div>
+  <!-- crossfade sliders wrapper end -->
+
+
+  <!-- scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="jquery.event.move.js"></script>
+  <script src="jquery.twentytwenty.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+
+  <!-- main js script -->
+  <script src="main.js"></script>
+
+  <script>
+
+    $(window).on("load", function () {
+      $('#cover').fadeOut("slow");
+    })
+  </script>
+
+
 </body>
 
 </html>

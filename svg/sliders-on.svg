@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="22px" viewBox="0 0 36 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>compare-on</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="compare-on" fill-rule="nonzero">
+            <rect id="Rectangle-3" stroke="#FFFFFF" stroke-width="2" x="1" y="1" width="34" height="20"></rect>
+            <path d="M18,2.39130435 L18,19.6086957" id="Line" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+            <circle id="Oval" stroke="#FFFFFF" fill="#FFFFFF" cx="18" cy="11" r="3"></circle>
+            <polygon id="Triangle" fill="#FFFFFF" opacity="0.5" points="5 11 11 8 11 14"></polygon>
+            <polygon id="Triangle-Copy" fill="#FFFFFF" opacity="0.5" transform="translate(28.000000, 11.000000) scale(-1, 1) translate(-28.000000, -11.000000) " points="25 11 31 8 31 14"></polygon>
+        </g>
+    </g>
+</svg>

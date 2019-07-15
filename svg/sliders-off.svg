@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="22px" viewBox="0 0 37 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>compare-off</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.400000006">
+        <g id="1366" transform="translate(-790.000000, -7.000000)" fill-rule="nonzero">
+            <g id="nav">
+                <g id="toggle" transform="translate(540.166992, 7.000000)">
+                    <g id="compare-off" transform="translate(250.338912, 0.000000)">
+                        <rect id="Rectangle-3" stroke="#FFFFFF" stroke-width="2" fill="#FFFFFF" x="1" y="1" width="34" height="20"></rect>
+                        <path d="M18,3.34782609 L18,18.6521739" id="Line" stroke="#3D3941" stroke-width="2" stroke-linecap="square"></path>
+                        <circle id="Oval" stroke="#FFFFFF" fill="#3D3941" cx="18" cy="11" r="3"></circle>
+                        <polygon id="Triangle" fill="#3D3941" opacity="0.5" points="5 11 11 8 11 14"></polygon>
+                        <polygon id="Triangle-Copy" fill="#3D3941" opacity="0.5" transform="translate(28.000000, 11.000000) scale(-1, 1) translate(-28.000000, -11.000000) " points="25 11 31 8 31 14"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
